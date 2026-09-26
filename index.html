@@ -1,137 +1,194 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nrocltx.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nrocltx.com</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #080b12;
-      color: white;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background: #080b12;
+  color: white;
+  min-height: 100vh;
+}
 
-    header {
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #20283a;
-    }
+header {
+  text-align: center;
+  padding: 22px 15px;
+  border-bottom: 1px solid #252b3a;
+}
 
-    .logo {
-      font-size: 25px;
-      font-weight: bold;
-      color: #6c7cff;
-    }
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #8d7cff;
+}
 
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
+.subtitle {
+  margin-top: 8px;
+  color: #aeb5c7;
+}
 
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 18px;
+}
 
-    .hero p {
-      color: #9aa4b8;
-      margin-bottom: 30px;
-    }
+.hero {
+  text-align: center;
+  padding: 25px 10px 35px;
+}
 
-    .button {
-      display: inline-block;
-      padding: 14px 25px;
-      background: #6c7cff;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-    }
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
 
-    .cards {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
+.hero p {
+  color: #aeb5c7;
+  font-size: 16px;
+}
 
-    .card {
-      background: #111724;
-      border: 1px solid #20283a;
-      border-radius: 15px;
-      padding: 25px;
-      text-align: center;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 28px;
+  background: #7567ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
 
-    .card h2 {
-      margin-bottom: 10px;
-    }
+.btn:hover {
+  background: #887cff;
+}
 
-    .card p {
-      color: #9aa4b8;
-    }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
 
-    footer {
-      text-align: center;
-      color: #68748a;
-      padding: 50px 20px;
-    }
+.card {
+  background: #151b28;
+  border: 1px solid #293144;
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+}
 
-    @media(max-width: 600px) {
-      .hero h1 {
-        font-size: 32px;
-      }
+.icon {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
 
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #aeb5c7;
+  line-height: 1.5;
+}
+
+.section {
+  margin-top: 35px;
+  background: #111722;
+  border: 1px solid #293144;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #252b3a;
+  color: #c5cada;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  margin-top: 35px;
+  color: #777f94;
+  border-top: 1px solid #252b3a;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">NROCLTX.COM</div>
-  </header>
+<header>
+  <div class="logo">NROCLTX.COM</div>
+  <div class="subtitle">Nền tảng quản lý VPS đơn giản và hiện đại.</div>
+</header>
+
+<div class="container">
 
   <section class="hero">
     <h1>Chào mừng đến Nrocltx</h1>
-    <p>Nền tảng quản lý VPS đơn giản và hiện đại.</p>
-    <a href="#" class="button">Bắt đầu</a>
+    <p>Quản lý máy chủ của bạn nhanh chóng, đơn giản và an toàn.</p>
+    <a href="#vps" class="btn">Bắt đầu</a>
   </section>
 
-  <section class="cards">
+  <section class="cards" id="vps">
 
     <div class="card">
-      <h2>🖥️ VPS</h2>
-      <p>Quản lý máy chủ của bạn.</p>
+      <div class="icon">🖥️</div>
+      <h2>VPS</h2>
+      <p>Quản lý máy chủ của bạn một cách dễ dàng.</p>
     </div>
 
     <div class="card">
-      <h2>⚡ Nhanh</h2>
-      <p>Giao diện đơn giản, tốc độ cao.</p>
+      <div class="icon">⚡</div>
+      <h2>Nhanh</h2>
+      <p>Giao diện đơn giản, tốc độ cao và dễ sử dụng.</p>
     </div>
 
     <div class="card">
-      <h2>🔐 An toàn</h2>
-      <p>Quản lý hệ thống dễ dàng.</p>
+      <div class="icon">🔐</div>
+      <h2>An toàn</h2>
+      <p>Quản lý hệ thống với giao diện rõ ràng và bảo mật.</p>
     </div>
 
   </section>
 
-  <footer>
-    © 2026 Nrocltx.com
-  </footer>
+  <section class="section">
+    <h2>Tính năng</h2>
+
+    <ul>
+      <li>✓ Quản lý VPS</li>
+      <li>✓ Theo dõi máy chủ</li>
+      <li>✓ Giao diện thân thiện trên điện thoại</li>
+      <li>✓ Thiết kế hiện đại</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Nrocltx.com — All rights reserved.
+</footer>
 
 </body>
 </html>
